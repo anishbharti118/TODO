@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TO DO List</title>
+    </head>
+    <body>
+        <div>
+            <form onsubmit="enterTask(event)">
+                <input type="text" placeholder="Enter Task" name="inputBox">
+                <button type="submit">Add</button>
+            </form>
+            <div id=:list">
+
+            </div>
+        </div>
+        <script>
+            function enterTask(e){
+                e.preventDefault();
+                console.log(e)
+                
+            }
+        </script>
+    </body>
+</html>
