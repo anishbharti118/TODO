@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
         <title>TO DO List</title>
     </head>
     <body>
@@ -18,7 +19,9 @@
             function enterTask(e){
                 e.preventDefault();
                 console.log(e)
-                
+                let task=document.createElement("p")
+                task.innerHTML = e.target.inputBox.value
+                document.getElementById("List").appendChild(task)
             }
         </script>
     </body>
